@@ -538,8 +538,8 @@ section {
         padding-bottom: 0;
 
         .section__sub {
-            font-size: 0.5em;
-            margin-top: 6em;
+            font-size: 0.8em;
+            margin-top: 4em;
             margin-bottom: 2em;
         }
 
@@ -553,6 +553,36 @@ section {
 
         &__prev {
             margin-bottom: 6em;
+        }
+
+        &__name {
+            font-size: 0.7em;
+            letter-spacing: 0.2em;
+
+            &:first-child {
+                // top: 38.3%;
+                left: 6.7%;
+            }
+
+            &:nth-child(2) {
+                // top: 38.3%;
+                right: -3%;
+            }
+
+            &:nth-child(3) {
+                // bottom: 2%;
+                left: -4%;
+            }
+
+            &:nth-child(4) {
+                // bottom: -10.5%;
+                left: 38%;
+            }
+
+            &:nth-child(5) {
+                right: -7%;
+                // bottom: 2%;
+            }
         }
     }
 }
