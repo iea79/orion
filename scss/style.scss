@@ -311,7 +311,7 @@ section {
 
     @media (max-width: 767px) {
         text-align: left;
-        padding-bottom: 7em;
+        padding-bottom: 2em;
 
         .section {
             &__title {
@@ -535,6 +535,8 @@ section {
     }
 
     @media (max-width: 767px) {
+        padding-bottom: 0;
+
         .section__sub {
             font-size: 0.5em;
             margin-top: 6em;
@@ -690,7 +692,7 @@ section {
 
     @media (max-width: 767px) {
         // padding-top: 4em;
-        padding-bottom: 15em;
+        padding-bottom: 5em;
 
         .section__title {
             font-size: 3em;
@@ -722,6 +724,10 @@ section {
 .token {
     padding: 5.2em 0;
     z-index: 1;
+
+    @media (max-width: 767px) {
+        padding-bottom: 0;
+    }
 
     .section__bg {
         img {
@@ -785,7 +791,7 @@ section {
         @media (max-width: 767px) {
             text-align: left;
             font-size: 1.4em;
-            margin-bottom: 5em;
+            margin-bottom: 1em;
 
             &__title {
                 font-size: 1.1em;
@@ -1166,7 +1172,8 @@ section {
         }
     }
     @media (max-width: 767px) {
-        padding-bottom: 10em;
+        padding-top: 5em;
+        padding-bottom: 3em;
     }
 }
 
@@ -1260,7 +1267,7 @@ section {
 
     @media (max-width: 767px) {
         padding-top: 8.6em;
-        padding-bottom: 9em;
+        padding-bottom: 3em;
     }
 }
 
@@ -1272,11 +1279,12 @@ section {
 
 .team {
     text-align: center;
-    padding: 4.6em 0 8em;
+    padding: 4.6em 0 5em;
     z-index: 1;
 
     @media (min-width: 768px) {
         min-height: 82em;
+        padding: 4.6em 0 8em;
     }
 
     .container_center {
@@ -1759,7 +1767,7 @@ section {
     }
 
     @media (max-width: 767px) {
-        padding-bottom: 9em;
+        padding-bottom: 7em;
     }
 }
 
