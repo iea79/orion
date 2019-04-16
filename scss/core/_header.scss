@@ -1,19 +1,205 @@
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-	background-color: #ccc;
-	padding: 10px 0;
-	@extend %clear_a;
-	&__logo {
-		float: left;
-		width: 150px;
-	}
+    // background-color: #ccc;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+
+    // @extend %clear_a;
+    .container_center {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 2em;
+        padding-top: 0.62em;
+        margin-bottom: -0.2em;
+        font-weight: 600;
+        letter-spacing: 0.45em;
+
+        img {
+            width: 1.4em;
+            margin-right: 0.5em;
+            margin-bottom: -0.5em;
+        }
+
+        // width: 150px;
+        a {}
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(#fff, .2);
+
+        a {
+            display: inline-block;
+            color: #c5a0a6;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+
+            @media (min-width: 768px) {
+                padding: 1.3em 0 1.9em;
+                font-size: 0.8em;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 50%;
+                bottom: 0;
+                width: 0%;
+                height: 2px;
+                background-color: #92e1dd;
+                bottom: -1px;
+                transition: .3s;
+            }
+
+            &:hover {
+                &:after {
+                    width: 100%;
+                    left: 0;
+                    background-color: rgba(#92e1dd, .7);
+                }
+            }
+
+            &.active {
+                &:after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+
+        }
+    }
+
+    &__auth {
+        a {
+            @media (min-width: 768px) {
+                margin-left: 3em;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        // position: fixed;
+        &__logo {
+            font-size: 2.1em;
+        }
+
+        .mobile__toggle {
+            position: absolute;
+            right: 3.2em;
+            top: 2.3em;
+            width: 2.6em;
+            height: 1em;
+            cursor: pointer;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                border-top: 1px solid #fff;
+                height: 1px;
+                right: 0;
+            }
+
+            &:before {
+                top: 0;
+                width: 100%;
+            }
+
+            &:after {
+                bottom: 0;
+                width: 75%;
+            }
+        }
+
+        .nav {
+            display: none;
+        }
+
+        &__auth {
+            display: none;
+        }
+
+        &__right {
+            a {
+                padding: 1em 0 1em;
+                font-size: 1.5em;
+                font-weight: 300;
+            }
+
+            &.open {
+                position: fixed;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-image: linear-gradient(46deg, rgba(#5f0e6d, .95) 0%, rgba(#030a1d, .95) 100%);
+                z-index: 100;
+                flex-direction: column;
+                justify-content: center;
+                overflow-y: auto;
+                padding: 7em 3em;
+
+                .mobile__toggle {
+                    top: 3em;
+
+                    &:before,
+                    &:after {
+                        top: 50%;
+                        width: 100%;
+                    }
+
+                    &:before {
+                        transform: rotate(45deg);
+                    }
+
+                    &:after {
+                        transform: rotate(-45deg);
+                    }
+                }
+
+                .nav {
+                    display: block;
+
+                    a {}
+                }
+
+                .header__auth {
+                    display: block;
+                }
+
+                .header__sigin {
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    text-align: center;
+                    background-image: linear-gradient(to right, #cc5b4a 0%, #ffc09a 100%);
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
 
 // stiky menu
 .stiky {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }

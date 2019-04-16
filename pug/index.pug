@@ -1,0 +1,554 @@
+-var frontVersion = '1.2';
+
+<!DOCTYPE html>
+html(lang="ru")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Orion
+
+    link(rel="stylesheet", href="css/style.css?"+frontVersion+"")
+body
+    .page
+        header.header
+            .container_center
+                a(href="/").header__logo
+                    img(src="/img/logo.svg", alt="")
+                    |ORION
+                nav.header__right
+                    .mobile__toggle
+                    ul.nav
+                        li.nav__item
+                            a(href="#crowdsale") crowdsale
+                        li.nav__item
+                            a(href="#ecosystem") platform
+                        li.nav__item
+                            a(href="#roadmap") roadmap
+                        li.nav__item
+                            a(href="#team") team
+                        li.nav__item
+                            a(href="#partnerships") media
+
+                    .header__auth
+                        a.header__sigin(href="#") sign in
+                        a(href="#") beta
+
+        // begin fScreen
+        section#fScreen.fScreen(data-animate-wrap)
+            .container_center
+                .fScreen__left
+                    h2.section__title LIQUIDITY AGGREGATOR PROTOCOL
+
+                    .fScreen__sub A standard for connecting to centralized and decentralized exchanges, enabling an ecosystem of dApps to solve liquidity issues and price parity. The Orion Protocol enables cross chain trading, omni-exchange accessibility, and liquidity.
+
+                    .fScreen__action
+                        // в data-video вставить id видео с youtube
+                        button.btn.btn_full(data-toggle="modal" data-target="#videoModal" data-video="B0B6pk_kk1M") WATCH VIDEO
+                        button.btn.btn_full(data-toggle="modal" data-target="#videoModal" data-video="B0B6pk_kk1M") View Demo
+
+                    .fScreen__soc
+                        ul.soc
+                            li.soc__item
+                                a.icon-twitter(href="#")
+                            li.soc__item
+                                a.icon-reddit(href="#")
+                            li.soc__item
+                                a.icon-github(href="#")
+                            li.soc__item
+                                a.icon-bitcoin(href="#")
+                            li.soc__item
+                                a.icon-telegram(href="#")
+                            li.soc__item
+                                a.icon-facebook(href="#")
+                            li.soc__item
+                                a.icon-medium(href="#")
+                            li.soc__item
+                                a.icon-discord(href="#")
+
+                .fScreen__right
+                    img(src="img/f-img.svg", alt="" data-animate-x="-0.1")
+
+        // end fScreen
+
+        // begin ecosystem
+        section#ecosystem.ecosystem(data-animate-wrap)
+
+            .section__bg
+                img(src="img/eco1.png", alt="" data-animate-xy="-1")
+                img(src="img/eco2.png", alt="" data-animate-xy="1")
+
+            .container_center
+                h2.section__title.section__title_center OUR ECOSYSTEM
+
+                .section__sub ORDER MATCHING ENGINE
+
+                .ecosystem__prev(data-animate-r="200")
+                    img(src="img/ecosystem.svg", alt="")
+                    .ecosystem__text
+                        .ecosystem__name(data-animate-r="220") PRICE FEED
+                        .ecosystem__name(data-animate-r="220") MULTI - CURRENCY WALLET
+                        .ecosystem__name(data-animate-r="220") PORTFOLIO MANAGER 
+                        .ecosystem__name(data-animate-r="220") CRYPTO INDEXES
+                        .ecosystem__name(data-animate-r="220") SHARED  LIQUIDITY POOL
+
+
+                // begin signUp 
+                .signUp
+                    .signUp__title Sign up for our mailing list and be first to learn of any Orion news
+                    .signUp__link
+                        .signUp__item
+                            a.btn(href="#") PITCH DECK
+                        .signUp__item
+                            a.btn(href="#") WHITEPAPER
+                        .signUp__item
+                            a.btn(href="#") Try Platform
+                        .signUp__item
+                            a.btn(href="#") join ico
+                // end signUp 
+
+        // end ecosystem
+
+
+        // begin feature
+        section#feature.feature
+            .container_center
+                .feature__left
+                    h2.section__title FEATURES
+
+                .feature__right
+                    .featureList
+                        .featureList__item
+                            i.icon-standard-api
+                            .featureList__text
+                                .featureList__title STANDARD API
+                                |Orion Protocol creates standard API for trading cryptocurrencies on any exchange, unifying centralised and decentralised ones.
+                        .featureList__item
+                            i.icon-order-smart
+                            .featureList__text
+                                .featureList__title ORDER SMARTH ROUTING 
+                                |Order matching engine splits orders and submit parts to the different exchanges, always guaranteeing the best buy and sell order price. Combined orderbook.
+                        .featureList__item
+                            i.icon-shared-liquidity
+                            .featureList__text
+                                .featureList__title SHARED LIQUIDITY POOL
+                                |Stakeholders from liquidity providers join together to execute orders from their accounts on behalf of user requests, earning commission fees from each trade.
+                        .featureList__item
+                            i.icon-marketplace
+                            .featureList__text
+                                .featureList__title DAPPS MARKETPLACE
+                                |A wide variety of applications can be created for the Orion Protocol, including for investment, trading bots and payment gateways.
+
+
+        // end feature
+
+        // begin token
+        section#token.token(data-animate-wrap)
+
+            .section__bg
+                img(src="img/token1.png", alt="" data-animate-xy="-1")
+                img(src="img/token2.png", alt="" data-animate-xy="2")
+
+            .container_center
+                h2.section__title ORN TOKEN
+
+                .tokenList
+                    .tokenList__item
+                        .tokenList__title ON-CHAIN SETTLEMENT
+                        |Access to arbitrage opportunities, advanced orders parameters (Limit orders, Stop market and Stop-Limit orders), controlling Stop Loss and Take Profit values, price alerts and many other features.
+                    .tokenList__item
+                        .tokenList__title UNLOCK PREMIUM FEATURES
+                        |A wide variety of applications can be created for the Orion Protocol, including for investment, trading bots and payment gateways.
+                    .tokenList__item
+                        .tokenList__title STAKING TO SHARED LIQUIDITY POOL
+                        |Every service and all DApps offered within the Orion Protocol will be charged using ORN.
+
+                    .tokenList__item
+                        .tokenList__title SERVICE SUBSCRIPTION FEE
+                        |To participate in shared liquidity pool and being able to execute orders on behalf of protocol users, participants must have the minimum amount of ORN tokens on their accounts, the more amount they have the more orders they can handle, receiving trading fee.
+                    .tokenList__item
+                        .tokenList__title PAYMENT SERVICES FOR DAPPS
+                        |All final settlements are performed on the Waves blockchain and guaranteed by a purpose-designed Smart Contract Escrow Account.
+                    .tokenList__item
+                        .tokenList__title TRADING FEE
+                        |Receive payments for using your dApp on the Orion. Participate in platform development, voting to list new cryptocurrencies and exchanges.
+
+
+        // end token
+
+        // begin roadmap
+        section#roadmap.roadmap
+
+            .section__bg
+                img(src="img/company1.png", alt="")
+            .container_center
+                h2.section__title.section__title_center COMPANY ROADMAP
+
+                .roadmap__wrap
+                    .roadmap__top
+                        .roadmap__sub 2018
+                    .roadmap__item
+                        .roadmap__content
+                            .roadmap__title MAR 2018
+                            |Initial production-ready version of ORN <br>launched
+                    .roadmap__item
+                        .roadmap__content
+                            .roadmap__title JUN-JUL 2018
+                            |Private pre-sale of ORN token
+                    .roadmap__item
+                        .roadmap__content
+                            .roadmap__title AUG 2018
+                            |Public ICO of ORN Token
+                    .roadmap__item
+                        .roadmap__content
+                            .roadmap__title JUN-JUL 2018
+                            |Public release of open Exchange API <br>
+                            |* Standard API to connect to every exchange <br>
+                            |* Dev tool for implementing exchange connectors
+                    .roadmap__item
+                        .roadmap__content
+                            .roadmap__title DEC 2018
+                            |Release of a client library for interacting with Orion <br>
+                            |*Receive price feeds in real time <br>
+                            |*Access order splitting and smart routing module <br>
+                            |*Submit order to the best exchange <br>
+                            |*Get notified about order status changes
+                    .roadmap__item
+                        .roadmap__content
+                            .roadmap__title Q4 2018
+                            |Public release of open Exchange API <br>
+                            |* Standard API to connect to every exchange <br>
+                            |* Dev tool for implementing exchange connectors
+                    .roadmap__item
+                        .roadmap__content
+                            .roadmap__title Q1 2019
+                            |Open-source of core modules <br>
+                            |*Crypto index funds launch <br>
+                            |*Portfolio management <br>
+                            |*Stop loss and limit orders <br>
+                            |*Market making strategies
+                    .roadmap__item
+                        .roadmap__content
+                            .roadmap__title Q2 2019
+                            |Shared liquidity pool <br>
+                            |*Brokers join pool by staking ORN tokens <br>
+                            |*Using brokers' funds to execute orders <br>
+                            |*On-chain settlement via escrow smart contract <br>
+                            |DApps marketplace
+                    .roadmap__item
+                        .roadmap__content
+                            .roadmap__title Q3 2019
+                            |Multi-currency wallet release <br>
+                            |*Support of the main currency (BTC, <br>ETH, BCH, LTC, etc) <br>
+                            |*Trading from the wallet <br>
+                            |Mobile apps release (iOS and <br>Android)
+                    .roadmap__bottom
+                        .roadmap__sub NOW
+
+        // end roadmap
+
+        // begin crowdsale
+        section#crowdsale.crowdsale(data-animate-wrap)
+            .section__bg
+                img(src="img/crowdsale1.png", alt="" data-animate-xy="-1")
+                img(src="img/crowdsale2.png", alt="" data-animate-xy="1")
+            .container_center
+                h2.section__title.section__title_center CROWDSALE
+
+                .crowdsale__wrap
+                    .crowdsale__item
+                        .crowdsale__row
+                            .crowdsale__name ICO STARTS
+                            .crowdsale__descr To be Announced Soon
+                        .crowdsale__row
+                            .crowdsale__name ICO ENDS
+                            .crowdsale__descr To be Announced Soon
+                        .crowdsale__row
+                            .crowdsale__name TOKEN NAME
+                            .crowdsale__descr ORN ((Waves, ERC-20)
+                        .crowdsale__row
+                            .crowdsale__name SOFTCAP
+                            .crowdsale__descr $500,000
+                        .crowdsale__row
+                            .crowdsale__name HARDCAP
+                            .crowdsale__descr $5,000,000
+                    .crowdsale__item
+                        .crowdsale__row
+                            .crowdsale__name ICO PLATFORM
+                            .crowdsale__descr www.orionprotocol.io
+                        .crowdsale__row
+                            .crowdsale__name TOKENS ON PUBLIC SALE
+                            .crowdsale__descr 65%
+                        .crowdsale__row
+                            .crowdsale__name PRICE
+                            .crowdsale__descr 0.0016 ETH
+                        .crowdsale__row
+                            .crowdsale__name ACCEPTED CURRENCIES
+                            .crowdsale__descr BTC, ETH, BCH, LTC, WAVES
+                        .crowdsale__row
+                            .crowdsale__name BLOCKCHAIN
+                            .crowdsale__descr Ethereum, Waves
+
+        // end crowdsale
+
+        // begin team
+        section#team.team(data-animate-wrap)
+            .section__bg
+                img(src="img/team1.png", alt="" data-animate-xy="-1")
+                img(src="img/team2.png", alt="" data-animate-xy="1")
+            .container_center
+                h2.section__title.section__title_center Team
+
+                .team__slider
+                    // Slide 1
+                    div
+                        .team__item
+                            .team__top
+                                .team__left
+                                    .team__name IGOR PLETENEV
+                                    .team__name CHIEF
+                                    .team__position TECHNOLOGY OFFICER
+                                .team__right
+                                    .team__avatar
+                                        img(src="img/team/Pletenev.png", alt="")
+                                    .team__soc
+                                        a.icon-instagram(href="https://www.linkedin.com/in/igorpletenev/")
+                            .team__descr_short
+                                p Igor is an accomplished entrepreneur and IT industry professional with active experience in several blockchain projects. He is also highly competent in web development and project management ...
+                            .team__descr
+                                p Igor is an accomplished entrepreneur and IT industry professional with active experience in several blockchain projects. He is also highly competent in web development and project management. These endeavors have provided him with a diverse skillset from which to draw when making decisions and planning for the future. He is responsible implementing the project roadmap, platform architecture, and executing the overall strategy of ORION’s mission.
+                                p “ORION significantly lowers the barrier to starting investing in cryptocurrencies and blockchain projects by removing the difficulties of finding the most promising instruments, creating wallets, transferring funds and controlling your earnings”.
+
+                            a.team__more(href="https://www.linkedin.com/in/igorpletenev/") Read more
+
+                    // Slide 2
+                    div
+                        .team__item
+                            .team__top
+                                .team__left
+                                    .team__name DIMA LEBED
+                                    .team__name LEAD
+                                    .team__position BACKEND ENGINEER
+                                .team__right
+                                    .team__avatar
+                                        img(src="img/team/Lebed.jpg", alt="")
+                                    .team__soc
+                                        a.icon-instagram(href="https://www.linkedin.com/in/dima-lebed-36a11b53")
+                            .team__descr_short
+                                p A professional software engineer, system architect and blockchain evangelist, Dima has designed and developed complex and high-load projects with a focus on trading and enterprise integration  …
+                            .team__descr
+                                p A professional software engineer, system architect and blockchain evangelist, Dima has designed and developed complex and high-load projects with a focus on trading and enterprise integration. His knowledge of data management and system deployment will allow the effective and timely development of the ORION protocol. As a software engineer Dima has extensive experience in backend development with a specialization in blockchain technologies for the past several years. He has designed and developed complex payment and trading solutions, including integration of bank gateways with merchant aggregators.
+                                p “The architecture of our unique trading engine is specially tailored towards quickly and easily connecting new exchanges, in order to prepare for rapid growth”.
+
+                            a.team__more(href="https://www.linkedin.com/in/dima-lebed-36a11b53/") Read more
+
+                    // Slide 3
+                    div
+                        .team__item
+                            .team__top
+                                .team__left
+                                    .team__name ALEXEY KOLOSKOV
+                                    .team__name CHIEF
+                                    .team__position EXECUTIVE OFFICER
+                                .team__right
+                                    .team__avatar
+                                        img(src="img/team/Koloskov.jpg", alt="")
+                                    .team__soc
+                                        a.icon-instagram(href="https://www.linkedin.com/in/alexey-koloskov")
+                            .team__descr_short
+                                p Alexey is a blockchain developer and the chief architect and creator of the Waves decentralised exchange (Waves’ DEX). He has extensive experience in the development and management of complex …
+                            .team__descr
+                                p Alexey is a blockchain developer and the chief architect and creator of the Waves decentralised exchange (Waves’ DEX). He has extensive experience in the development and management of complex banking software and in managing large scale IT projects. Over the past several years he has established a reputation as an active and expert participant within the blockchain development community. His work in blockchain development and exchange implementation provides ORION with unparalleled expertise and insight.
+                                p “During development of the Waves DEX I became 100% assured of the need for decentralised systems. Still, there is a need for an intermediate solution that fills existing gaps and problems of liquidity, complexity and low speed, bringing together dozens of centralised and decentralised exchanges under one roof. ORION will constantly integrate new DEXs as they become more popular, according to its strategic plan of replacing centralised services”.
+
+                            a.team__more(href="https://www.linkedin.com/in/alexey-koloskov") Read more
+
+                    // Slide 4
+                    div
+                        .team__item
+                            .team__top
+                                .team__left
+                                    .team__name EDUARD ZAYDEL
+                                    .team__name LEAD
+                                    .team__position FRONTEND ENGINEER
+                                .team__right
+                                    .team__avatar
+                                        img(src="img/team/Zaydel.jpg", alt="")
+                                    .team__soc
+                                        a.icon-instagram(href="https://www.linkedin.com/in/eduardzaydel")
+                            .team__descr_short
+                                p Eduard is a former Waves Wallet developer with considerable proficiency in user interface design. His work in the field will allow ORION to provide customers with a clean, ...
+                            .team__descr
+                                p Eduard is a former Waves Wallet developer with considerable proficiency in user interface design. His work in the field will allow ORION to provide customers with a clean, functional and user-friendly interaction with investment tools. His experience in mobile interface design brings unmatched knowledge to the ORION team.
+                                p “A simple-to-use UI is a key factor in the success of any IT product that seeks mass adoption. Buying and selling has to be no more complex than pressing a single button””.
+
+                            a.team__more(href="https://www.linkedin.com/in/eduardzaydel/") Read more
+
+                    // Slide 5
+                    div
+                        .team__item
+                            .team__top
+                                .team__left
+                                    .team__name MAKSYM LAVRINENKO
+                                    .team__name CHIEF
+                                    .team__position MARKETING OFFICER
+                                .team__right
+                                    .team__avatar
+                                        img(src="img/team/Lavrinenko.jpg", alt="")
+                                    .team__soc
+                                        a.icon-instagram(href="https://www.linkedin.com/in/%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC-%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%BD%D0%B5%D0%BD%D0%BA%D0%BE-910411134")
+                            .team__descr_short
+                                p Maksym is a highly qualified entrepreneur and crowdsale specialist. His focus is on data-driven marketing, behavioral analytics and effective online marketing ...
+                            .team__descr
+                                p Maksym is a highly qualified entrepreneur and crowdsale specialist. His focus is on data-driven marketing, behavioral analytics and effective online marketing. Maksym is also the CMO of Peiko, an IT outsourcing company specializing in blockchain and fintech projects, as well as mobile applications and online services. His marketing and data analytics background will facilitate bringing ORION to the public in a clear and concise manner, ensuring investor and client confidence.
+                                p “When pitching the idea of the product to users I only use several word: ORION is all-in-one platform that you ever need for blockchain investment and trading””.
+
+                            a.team__more(href="https://www.linkedin.com/in/%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC-%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%BD%D0%B5%D0%BD%D0%BA%D0%BE-910411134") Read more
+
+        // end team
+
+        // begin advisors
+        section#advisors.advisors
+            .section__bg
+                img(src="img/advisors1.png", alt="")
+            .container_center
+                h2.section__title.section__title_center advisors
+
+                .advisors__slider
+                    // Slide 1
+                    div
+                        .team__item
+                            .advisors__left
+                                .advisors__img
+                                    img(src="img/advisors/Kal.jpg", alt="")
+                            .advisors__right
+                                .team__name Kal Ali
+                                .team__position Advisor
+                                .team__descr
+                                    p Co-Founder & Managing Partner of Interchain Capital, Blockchain Partnership Advisor and Consultant.
+                                a.team__more(href="https://www.linkedin.com/in/kal-ali") Read more
+
+                    // Slide 2
+                    div
+                        .team__item
+                            .advisors__left
+                                .advisors__img
+                                    img(src="img/advisors/David_A.jpg", alt="")
+                            .advisors__right
+                                .team__name David Atkinson
+                                .team__position Advisor
+                                .team__descr
+                                    p Director Holo & Holochain focussed on delivery of services and growth of the organisation.
+
+                                a.team__more(href="https://www.linkedin.com/in/davidcatkinson") Read more
+
+                    // Slide 3
+                    div
+                        .team__item
+                            .advisors__left
+                                .advisors__img
+                                    img(src="img/advisors/Herugu.jpg", alt="")
+                            .advisors__right
+                                .team__name Sreenivas Herugu
+                                .team__position Advisor
+                                .team__descr
+                                    p Sreenivas is FinTech professional with 20 years of experience consulting at major Wall Street banks. Extensive background in Software development and managed various projects. He is a Blockchain enthusiast, ICO advisor, researcher and an investor.
+                                a.team__more(href="https://www.linkedin.com/in/sreenivas-herugu-8694aa1") Read more
+
+                    // Slide 4
+                    div
+                        .team__item
+                            .advisors__left
+                                .advisors__img
+                                    img(src="../img/advisors/Puru.jpg", alt="")
+                            .advisors__right
+                                .team__name Purushotham Maralappa
+                                .team__position Advisor
+                                .team__descr
+                                    p Purushotham is focused in Blockchain industry and offering advice, consultation services, connections to Blockchain experts and cyrptocurrency investors, organizing blockchain events and roadshows in Tokyo for oversea startups.
+                                a.team__more(href="https://www.linkedin.com/in/purushotham-maralappa") Read more
+
+
+        // end advisors
+
+        // begin partnerships
+        section#partnerships.partnerships(data-animate-wrap)
+            .section__bg
+                img(src="img/partnerships1.png", alt="" data-animate-xy="-1")
+            .container_center
+                h2.section__title.section__title_center PARTNERSHIPS
+
+                .partnerships__list
+                    a.partnerships__item(href="https://www.newsbtc.com/2018/04/11/holdvest-access-every-exchange-single-portal/")
+                        img(src="img/partnerships/newsbtc.png", alt="" style="width: 12.6em")
+                    a.partnerships__item(href="http://bitcoinist.com/holdvest-one-stop-cryptocurrency-trading-investing/")
+                        img(src="img/partnerships/bitcoin.png", alt="" style="width: 3.6em")
+                    a.partnerships__item(href="https://forklog.com/platforma-holdvest-sozdaet-universalnyj-portal-dlya-kriptotorgovli-i-investitsij/")
+                        img(src="img/partnerships/forklog.png", alt="" style="width: 12.2em")
+                    a.partnerships__item(href="https://www.ccn.com/holdvest-launch-universal-crypto-trading-portal/")
+                        img(src="img/partnerships/ccn.png", alt="" style="width: 8em")
+                    a.partnerships__item(href="http://www.livebitcoinnews.com/holdvest-your-universal-gateway-to-the-crypto-markets/")
+                        img(src="img/partnerships/bitcoinnews.png", alt="" style="width: 5.8em")
+                    a.partnerships__item(href="https://altcoinlog.com/holdvest-ico/")
+                        img(src="img/partnerships/altcoinlog.png", alt="" style="width: 10em")
+                    a.partnerships__item(href="#")
+                        img(src="img/partnerships/waves.png", alt="" style="width: 8em")
+                    a.partnerships__item(href="#")
+                        img(src="img/partnerships/switcheo.png", alt="" style="width: 13.5em")
+                    a.partnerships__item(href="#")
+                        img(src="img/partnerships/idex.png", alt="" style="width: 7.4em")
+
+        // end partnerships
+
+        footer.footer
+            .container_center
+                ul.soc
+                    li.soc__item
+                        a.icon-twitter(href="#")
+                    li.soc__item
+                        a.icon-reddit(href="#")
+                    li.soc__item
+                        a.icon-github(href="#")
+                    li.soc__item
+                        a.icon-bitcoin(href="#")
+                    li.soc__item
+                        a.icon-telegram(href="#")
+                    li.soc__item
+                        a.icon-facebook(href="#")
+                    li.soc__item
+                        a.icon-medium(href="#")
+                    li.soc__item
+                        a.icon-discord(href="#")
+                .footer__nav
+                    ul.nav
+                        li.nav__item
+                            a(href="#") PITCH DECK
+                        li.nav__item
+                            a.active(href="#") WHITE PAPER
+                        li.nav__item
+                            a(href="#") FIRST APP
+                        li.nav__item
+                            a(href="#") GIHUB
+                        li.nav__item
+                            a(href="#") TEAM
+                        li.nav__item
+                            a(href="#") CROWDSALE
+                        li.nav__item
+                            a(href="#") ROAD SALE
+
+
+    // Begin Modal videoModal 
+    .modal.fade.videoModal#videoModal
+        .modal-dialog
+            .modal-content
+                .video__wrapper.js_youtube
+    // End modal videoModal 
+
+
+    script(src="js/jquery.js")
+    //- script(src="js/jquery-onepage-scroll.js")
+    //- script(src="js/jquery.maskedinput.js")
+    script(src="js/slick.min.js")
+    script(src="js/modal.js")
+    script(src="js/TweenMax.min.js")
+    script(src="js/app.js?"+frontVersion+"")

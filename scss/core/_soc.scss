@@ -1,22 +1,54 @@
 // Social link
 .soc {
-	float: left;
-	a {
-		display: inline-block;
-		width: 30px;
-		height: 30px;
-		border-radius: 50%;
-		background-color: #000;
-		text-align: center;
-		text-decoration: none;
-		@include trs(0.3s);
-		&:hover {
-			opacity: .8;
-		}
-		&:before {
-			content: 'soc';
-			color: #fff;
-			text-decoration: none;
-		}
-	}
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+    &__item {
+        margin-right: 3.3em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    a {
+        display: inline-block;
+        color: rgba(#fff, .3);
+        font-size: 1.7em;
+        // width: 30px;
+        // height: 30px;
+        // border-radius: 50%;
+        // background-color: #000;
+
+        text-align: center;
+        text-decoration: none;
+        @include trs(0.3s);
+
+        &:hover {
+            // opacity: .8;
+            // font-size: 1.8em;
+            transform: scale(1.1);
+
+            color: rgba(#cc5b4a, 0.8);
+        }
+
+        &:before {
+            // content: 'soc';
+            // color: #fff;
+            // text-decoration: none;
+
+        }
+    }
+
+    @media (max-width: 767px) {
+        justify-content: space-between;
+
+        &__item {
+            margin-right: 0em;
+        }
+    }
 }
